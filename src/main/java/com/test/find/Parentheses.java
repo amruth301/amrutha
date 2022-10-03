@@ -11,10 +11,10 @@ An input string is valid if:
 * Every close bracket has a corresponding open bracket of the same type.
  */
 
-public class Parantheses {
+public class Parentheses {
 
     public boolean validParatheses(String input){
-        boolean flag = false
+        boolean flag = false;
         //Put your code here and return expected results
 
         return flag;

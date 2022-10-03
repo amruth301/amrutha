@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="longest-substring" />
+        <module name="valid-parentheses" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="longest-substring" target="12" />
+      <module name="valid-parentheses" target="12" />
     </bytecodeTargetLevel>
   </component>
 </project>
