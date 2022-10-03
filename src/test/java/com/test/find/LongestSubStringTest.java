@@ -11,13 +11,13 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-class LongestSubStringTest {
+class ParanthesesTest {
 
   @Test
-  @DisplayName("find longest substring for abcabcbb")
+  @DisplayName("find if it's a valid parantheses: ()")
   void test1(){
-    String data = "abcabcbb";
-    assertEquals(new LongestSubString().longestSubString(data), 3, "Longest SubString would be 3");
+    String data = "()";
+    assertEquals(new Parantheses().validParantheses(data), 3, "Longest SubString would be 3");
   }
 
   @Test
