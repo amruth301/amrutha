@@ -22,10 +22,10 @@ class ParenthesesTest {
   }
 
   @Test
-  @DisplayName("find longest Substring for ABDEFGABEF")
+  @DisplayName("find if it's a valid parantheses: [)")
   void test3(){
     String data = "[)";
-    assertFalse(new Parentheses().validParatheses(data), "([]){} is an invalid parentheses");
+    assertFalse(new Parentheses().validParatheses(data), "[) is an invalid parentheses");
   }
 
 }
