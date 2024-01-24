@@ -13,10 +13,22 @@ An input string is valid if:
 
 public class Parentheses {
 
-    public boolean validParatheses(String input){
-        boolean flag = false;
-        //Put your code here and return expected results
+   public boolean validParatheses(String input) {
+        Stack<Character> stack = new Stack<>();
 
-        return flag;
+        for (char bracket : input.toCharArray()) {
+            if (bracket == '(' || bracket == '{' || bracket == '[') {
+                stack.push(bracket);
+            } else if (bracket == ')' && !stack.isEmpty() && stack.peek() == '(') {
+                stack.pop();
+            } else if (bracket == '}' && !stack.isEmpty() && stack.peek() == '{') {
+                stack.pop();
+            } else if (bracket == ']' && !stack.isEmpty() && stack.peek() == '[') {
+                stack.pop();
+            } else {
+                return false;
+            }
+        }
+        return stack.isEmpty();
     }
 }
